@@ -493,3 +493,96 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 500; }
   .countdown { gap: 10px; }
 }
 @media (max-width: 360px) { .hero h1 { font-size: 34px; } .memory-image-button { height: 360px; } .memory-dot { width: 23px; } }
+
+h1, h2, h3 { letter-spacing: .012em; text-wrap: balance; }
+.eyebrow { font-family: var(--font-sans); letter-spacing: .14em; }
+.hero-date, .event-info .event-time { font-variant-numeric: tabular-nums; letter-spacing: .08em; }
+.family-layout > * { min-width: 0; }
+.family-person {
+  position: relative;
+  min-width: 0;
+  padding: 22px 18px 24px;
+  border: 1px solid color-mix(in oklch, var(--gold) 34%, var(--border));
+  background: color-mix(in oklch, var(--card) 84%, transparent);
+  box-shadow: var(--paper-shadow);
+}
+.family-person::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  width: 38px;
+  height: 2px;
+  transform: translateX(-50%);
+  background: var(--gold);
+}
+.family-person .eyebrow { color: var(--muted-foreground); }
+.family-person h3 {
+  color: var(--primary);
+  font-size: clamp(29px, 3.2vw, 40px);
+  line-height: 1.08;
+  letter-spacing: .018em;
+  margin: 12px 0 9px;
+}
+.family-person h3::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  margin: 11px auto 0;
+  background: var(--gold);
+}
+.family-person > p:not(.eyebrow) { color: var(--muted-foreground); font-size: 11px; line-height: 1.7; }
+.family-person strong {
+  display: inline;
+  color: var(--primary);
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  background: linear-gradient(transparent 68%, color-mix(in oklch, var(--gold) 22%, transparent) 68%);
+  padding: 0 2px;
+}
+.family-person .family-residence { margin-top: 8px; letter-spacing: .06em; }
+.family-blessings { align-items: stretch; gap: 24px; }
+.blessing-group {
+  position: relative;
+  flex: 0 1 340px;
+  padding: 18px 22px;
+  border: 1px solid var(--border);
+  background: color-mix(in oklch, var(--secondary) 58%, transparent);
+}
+.blessing-group .eyebrow { color: var(--floral); margin-bottom: 12px; }
+.blessing-group p:not(.eyebrow) { color: var(--foreground); font-size: 19px; line-height: 1.55; }
+.journey .event-card { min-width: 0; overflow: hidden; }
+.journey .event-card > * { min-width: 0; }
+.journey .event-info h3 { line-height: 1.12; letter-spacing: .014em; }
+.journey .event-photo-wrap {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  padding: 6px;
+  overflow: hidden;
+  border: 1px solid color-mix(in oklch, var(--gold) 60%, transparent);
+  background: color-mix(in oklch, var(--secondary) 68%, var(--card));
+}
+.journey .event-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center 38%;
+}
+@media (max-width: 850px) {
+  .journey .event-card { width: min(72%, 480px); grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 600px) {
+  .family-person { padding: 20px 18px 22px; }
+  .family-person h3 { font-size: clamp(30px, 8vw, 36px); }
+  .blessing-group { flex-basis: auto; width: min(100%, 420px); margin-inline: auto; }
+  .journey .event-card { width: min(80%, 390px); padding: 12px; gap: 12px; }
+  .journey .event-photo-wrap { aspect-ratio: 4 / 5; }
+}

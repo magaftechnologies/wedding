@@ -7,7 +7,7 @@ import { n as clsx, t as cva } from "../_libs/class-variance-authority+clsx.mjs"
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
 import { n as objectType, r as stringType, t as enumType } from "../_libs/zod.mjs";
 import { t as useEmblaCarousel } from "../_libs/embla-carousel-react+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-CZID6UIL.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-DnfSUqmT.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function cn(...inputs) {
@@ -1236,37 +1236,52 @@ function Invitation() {
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "family-layout",
 							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "eyebrow",
-										children: language === "te" ? "వరుడు" : "The Groom"
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: wedding.groomFormal }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: language === "te" ? "ఏకైక కుమారుడు" : "Only son of" }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: wedding.groomParents })
-								] }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "family-person groom-family",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "eyebrow",
+											children: language === "te" ? "వరుడు" : "The Groom"
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: wedding.groomFormal }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: language === "te" ? "ఏకైక కుమారుడు" : "Only son of" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: wedding.groomParents })
+									]
+								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Ornament, {}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "eyebrow",
-										children: language === "te" ? "వధువు" : "The Bride"
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: wedding.brideFormal }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: language === "te" ? "ఏకైక కుమార్తె" : "Only daughter of" }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: wedding.brideParents }),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: wedding.brideResidence })
-								] })
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "family-person bride-family",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "eyebrow",
+											children: language === "te" ? "వధువు" : "The Bride"
+										}),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", { children: wedding.brideFormal }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: language === "te" ? "ఏకైక కుమార్తె" : "Only daughter of" }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: wedding.brideParents }),
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+											className: "family-residence",
+											children: wedding.brideResidence
+										})
+									]
+								})
 							]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "family-blessings",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "eyebrow",
-								children: language === "te" ? "దివ్య ఆశీస్సులతో" : "With divine blessings of"
-							}), wedding.divineBlessings.map((name) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: name }, name))] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "eyebrow",
-								children: language === "te" ? "ఆశీస్సులతో" : "With blessings of"
-							}), wedding.blessings.map((name) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: name }, name))] })]
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "blessing-group divine-blessings",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "eyebrow",
+									children: language === "te" ? "దివ్య ఆశీస్సులతో" : "With divine blessings of"
+								}), wedding.divineBlessings.map((name) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: name }, name))]
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+								className: "blessing-group family-blessing",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "eyebrow",
+									children: language === "te" ? "ఆశీస్సులతో" : "With blessings of"
+								}), wedding.blessings.map((name) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: name }, name))]
+							})]
 						})
 					]
 				}),

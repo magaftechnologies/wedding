@@ -3,10 +3,10 @@ import { n as require_react } from "../_libs/@radix-ui/react-compose-refs+[...].
 import { _ as createFileRoute, b as useRouter, d as Scripts, f as HeadContent, g as lazyRouteComponent, h as Outlet, m as createRouter, v as createRootRouteWithContext, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { n as require_jsx_runtime, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-ChCO8jWB.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-C4UFZVbv.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-Cycmui5L.css";
+var styles_default = "/assets/styles-2oFGEEJ0.css";
 function reportAppError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	console.error("[App error]", {
@@ -171,7 +171,7 @@ var client_share_jpg_asset_default = {
 	url: "https://id-preview--0a6abf23-d86f-4a1d-bbd4-1b223d3d5966.lovable.app/__l5e/assets-v1/14a8f8c4-0c3d-4f68-916c-3415b416a04f/akshay-sandhya-share.jpg",
 	version: 1
 };
-var $$splitComponentImporter = () => import("./routes-CZID6UIL.mjs");
+var $$splitComponentImporter = () => import("./routes-DnfSUqmT.mjs");
 var sharingImage = client_share_jpg_asset_default.url;
 var rootRouteChildren = { IndexRoute: createFileRoute("/")({
 	head: () => ({
